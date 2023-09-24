@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;}
+
+
+  @font-face {
+    font-family: 'Mooli';
+    src: url('Mooli-Regular.woff2') format('woff2'),  }
+
+  body {
+    margin: 0;
+    font-family: 'Mooli';
+    src: url('Mooli-Regular.woff2') format('woff2'),}
+  
+  .he { /*header*/
+    padding: 3px;
+    text-align: center;
+    background: rgb(151, 173, 166);
+    color: white;  }
+
+  .he h1 { /*header*/
+    font-size: 50px;}
+  
+  .navbar { /* navigation */
+    overflow: hidden;
+    background-color: rgb(231, 200, 164);
+    font-weight: bold; 
+position: -webkit-sticky;
+position: sticky;
+    top: 0;}
+  
+  .navbar a {  /* links */
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;}
+   
+   .navbar a.right {/* Right link */
+    float: right;  }
+
+  .navbar a:hover { /* hover color */
+    background-color: #ddd;
+    color: black;  }
+
+  .co { /*Multicolor*/
+    background: linear-gradient(to left,
+green,
+red,
+violet,
+orange,
+blue);
+    -webkit-background-clip: text;
+    color: transparent;}
+    
+    .row {  /*split 2 row*/
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+     flex-wrap: wrap;  }
+    
+    .row1 { /*leftSide*/
+    -ms-flex: 33%;
+    flex: 33%;
+    background-color: #f1f1f1;
+    padding: 20px; }
+ 
+table, th, td { /*table*/
+     text-align: center;
+    border: 1px black solid; }
+   
+.ol, li { /*table*/
+    line-height: 3vw; }
+   
+    .row2 {   /*Main*/
+    -ms-flex: 33%;
+    flex: 33%;
+    background-color: white;
+    padding: 20px; }
+     
+.flo { /*position*/
+    position: relative;}
+
+.sh { /*text-hover*/
+background-color: rgba(177, 132, 220, 0.671);
+margin-left: 13%;
+margin-top: -12%;
+display: none;
+position: absolute;
+z-index:(1);
+text-align: center;}
+
+.sel:hover {
+    font-size: 20px;
+    font-weight: bold;}
+
+.sel:hover + .sh {
+    display: inline-block;}
+
+.row3 {   /*rightSide*/
+    -ms-flex: 33%;
+    flex: 33%;
+    background-color: #f1f1f1;
+    padding: 20px;  }
+    
+.hov {
+margin-left: 30%;
+    display:inline-table; 
+    border: 1px solid black; 
+    padding: 10px; 
+    transition: all 0.5s;
+}
+
+.hov:hover {
+    background-color: rgba(178, 132, 220, 0.87);
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%) scale(3) rotate(180deg); /* Center and scale the box */
+    position: absolute;
+    top: 50%; /* Move to the vertical center of the screen */
+    left: 10%; /* Move to the horizontal center of the screen */
+    z-index: 999; /* Bring to the front, above other elements */
+inset-inline-start:cubic-bezier(1,-0.46, 0.2, 1.16) ;
+text-transform:uppercase; }
